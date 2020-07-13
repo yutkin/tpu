@@ -107,7 +107,7 @@ def main(_):
 
   with tf.Graph().as_default(), tf.Session() as sess:
     images = tf.placeholder(
-        tf.float32,
+        tf.uint8,
         shape=(1, FLAGS.image_size, FLAGS.image_size, 3),
         name="images")
 
